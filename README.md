@@ -16,6 +16,9 @@ We are still in the design phase of this project.  Details are to come.
 
 ## Technologies Used
 
+* Bootstrap 3.3.7
+* JQuery 3.2.1
+
 ## Licence 
 
 ## Acknowledgments
