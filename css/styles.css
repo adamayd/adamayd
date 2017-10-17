@@ -1,180 +1,40 @@
-/*  Color Palette
-#E3170A - ku crimson
-#FE5F55 - sunset orange
-#D6A99A - pastel pink
-#230903 - zinwaldite brown
-#F7FFF7 - mint cream
-
-
-/*  Global Styles
---------------------*/
 html {
   box-sizing: border-box;
+  background-color: #444;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-}
-
-h1, h2 {
-  font-family: Raleway, sans-serif;
-}
-
-h2 {
-  margin-top: 0px;
-}
-
-h3 {
-  margin: 0;
-}
-
-a {
-  color: #F7FFF7;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.content-wrap {
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 60px 50px;
-  overflow: auto;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.btn {
-  text-decoration: none;
-  background: #E3170A;
-  color: #F7FFF7;
-  padding: 10px;
-  display: inline-block;
-}
-
-/*  Header and Footer
-----------------------*/
-header, footer {
-  background: #FE5F55;
-  color: #230903;
-}
-
-header h1, header h2 {
-  color: #F7FFF7;
-}
-
 header {
-  padding-top: 50px;
-  position: relative;
-}
-
-.logo {
-  text-decoration: none;
-}
-
-.profile-img {
-  border-radius: 50%;
-}
-
-.download {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-footer {
-  text-align: center;
-}
-
-.contact-info a {
-  padding: 10px;
-}
-
-/*  Navigation
-----------------------*/
-
-nav {
-  text-align: center;
-  background: #E3170A;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-nav a {
-  display: inline-block;
-  padding: 15px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #F7FFF7;
-}
-
-
-/*  Work Experience
-----------------------*/
-.work {
-  background: #D6A99A;
-}
-
-h3 ~ p {
-  margin: 0;
-}
-
-.job-description {
-  margin-bottom: 25px;
-}
-
-.job-description p:first-of-type {
-  margin-top: 0;
-
-}
-
-/*  Education
----------------------*/
-.education {
-  background: #F7FFF7;
-  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.5)),
-              url(../images/education.jpg) no-repeat fixed;
+  background-image: url('../images/25u6xk0.jpg');
   background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  text-align: center;
+  color: #fff;
 }
 
-p + h3 {
-  margin-top: 30px;
+header h1 {
+  text-transform: uppercase;
+  font-size: 4em;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin-top: 30%;
 }
 
-/* Media Queries
----------------------*/
-
-@media (min-width: 900px) {
-
-  .col-narrow {
-    width: 30%;
-    float: left;
-  }
-
-  .col-wide {
-    width: 70%;
-    float: left;
-    padding-left: 20px;
-  }
+header p {
+  font-family: 'Alegreya', 'Times New Roman', serif;
+  font-size: 2em;
 }
 
-@media (max-width: 899px) {
-
-  header {
-    text-align: center;
+@media (max-width: 450px) {
+  header h1 {
+    margin-top: 70%;
+    font-size: 3em;
   }
 
-  .profile-img {
-    width: 200px;
+  header p {
+    font-size: 1.5em;
   }
 }
