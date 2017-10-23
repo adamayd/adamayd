@@ -18,7 +18,8 @@ header {
 
 header h1 {
   text-transform: uppercase;
-  font-size: 4em;
+  font-weight: 900;
+  font-size: 4.5em;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   margin-top: 30%;
 }
