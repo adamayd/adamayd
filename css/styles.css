@@ -7,6 +7,51 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a,
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+  text-decoration: none;
+  padding: 20px;
+  transition: 0.25s ease-out;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a:after {
+  width: 100%;
+  background: #fff;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+}
+
 header {
   background-image: url('../images/25u6xk0.jpg');
   background-size: cover;
@@ -16,12 +61,21 @@ header {
   color: #fff;
 }
 
+.title {
+  position: absolute;
+  height: 200px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 header h1 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 4.5em;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  margin-top: 30%;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 header p {
@@ -29,9 +83,14 @@ header p {
   font-size: 2em;
 }
 
+article {
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media (max-width: 450px) {
   header h1 {
-    margin-top: 70%;
     font-size: 3em;
   }
 
