@@ -16,7 +16,7 @@ window.onscroll = function() {
         document.querySelector('nav').style.backgroundColor = 'rgba(0,0,0,1)';
     } else {
         console.log('leave the nav');
-        document.querySelector('nav').style.backgroundColor = 'rgba(0,0,0,0.2)';
+        document.querySelector('nav').style.backgroundColor = 'rgba(0,0,0,0)';
     }
 }
 
