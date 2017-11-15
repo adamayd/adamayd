@@ -6,11 +6,11 @@ var sass        = require ('gulp-sass');
 gulp.task('serve', function() {
 
   browserSync.init({
-   server: "./dist"
+   server: "./public"
   });
 
   gulp.watch("src/stylesheets/**/*.scss", ['sass']);
-  gulp.watch("dist/*.html").on('change', browserSync.reload);
+  gulp.watch("public/*.html").on('change', browserSync.reload);
 });
 
 // compile sass into css and reload into browser
@@ -18,7 +18,7 @@ gulp.task('serve', function() {
 gulp.task('sass', function() {
   return gulp.src("src/stylesheets/main.scss")
          .pipe(sass().on('error', sass.logError))
-         .pipe(gulp.dest("dist/css/"))
+         .pipe(gulp.dest("public/css/"))
          .pipe(browserSync.stream());
 });
 
