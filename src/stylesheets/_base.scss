@@ -1,0 +1,13 @@
+html {
+    box-sizing: border-box;
+    background: $black;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    background: $white;
+  }

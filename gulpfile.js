@@ -16,7 +16,7 @@ gulp.task('serve', function() {
 // compile sass into css and reload into browser
 
 gulp.task('sass', function() {
-  return gulp.src("src/stylesheets/main.scss")
+  return gulp.src("src/stylesheets/styles.scss")
          .pipe(sass().on('error', sass.logError))
          .pipe(gulp.dest("public/css/"))
          .pipe(browserSync.stream());

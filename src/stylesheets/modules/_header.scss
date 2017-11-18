@@ -1,0 +1,14 @@
+header {
+  padding-top: 50px;
+  @include bgImage("../images/25u6xk0.jpg", 33vh);
+  background-attachment: fixed;
+  color: $white;
+  display: flex;
+}
+  
+.title {
+  justify-content: left;
+  align-self: flex-end;
+  padding: 30px;
+}
+
