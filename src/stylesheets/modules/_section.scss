@@ -1,3 +1,7 @@
-section:nth-of-type(even) {
+section {
+  margin: auto;
+  max-width: 1200px;
+  &:nth-of-type(even) {
     background: $gray;
   }
+}
