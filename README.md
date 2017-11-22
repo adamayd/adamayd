@@ -12,7 +12,7 @@ We are still in the design phase of this project.  Details are to come.
 
 After cloning the repo, run the following command to install the dependencies.
 
-`npm install browser-sync gulp gulp-sass --save-dev`
+`npm install`
 
 After everything is installed used ```npm start``` to start the server.
 
@@ -23,8 +23,11 @@ After everything is installed used ```npm start``` to start the server.
 ## Technologies Used
 
 * HTML
-* CSS/SASS
+* Jekyll
+* CSS
+* Sass
 * Javascript ES2015/ES6
+* Babel
 * Gulp.js
 * Node.js/NPM
 * BrowserSync
