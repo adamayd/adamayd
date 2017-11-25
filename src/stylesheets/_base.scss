@@ -1,6 +1,8 @@
 html {
     box-sizing: border-box;
-    background: $black;
+    background: $notsoblack;
+    line-height: 1.6;
+    font-family: 'Nunito', sans-serif;
   }
   
   *, *:before, *:after {
@@ -10,4 +12,8 @@ html {
   body {
     margin: 0;
     background: $white;
+  }
+
+  h1, h2, h3, h4, h5 {
+    line-height: 1.2;
   }
