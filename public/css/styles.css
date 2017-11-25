@@ -431,7 +431,7 @@ header {
   padding: 30px; }
 
 section {
-  margin: auto; }
+  margin: 0; }
   section:nth-of-type(odd) {
     background: lightgray; }
   section .container {
