@@ -1,7 +1,12 @@
 section {
-  margin: auto;
-  max-width: 1200px;
-  &:nth-of-type(even) {
+  margin: 0;
+  &:nth-of-type(odd) {
     background: $gray;
+  }
+  .container {
+    margin: auto;
+    padding: 50px 0;
+    width: 80%;
+    text-align: center;
   }
 }
