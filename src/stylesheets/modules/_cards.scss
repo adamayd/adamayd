@@ -1,10 +1,10 @@
 .card {
-    /*flex: 1 1 50%;*/  
+    flex-basis: 50%;
     border: 1px solid #efefef;
     box-shadow: 2px 6px 25px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     position: relative;
-    margin: 20px 5%;
+    margin: 30px;
     &:hover {
         box-shadow: 2px 6px 30px rgba(0,0,0,0.2);
     }
@@ -67,8 +67,26 @@
     margin-right: .25rem;
 }
 
+@media screen and (max-width: 900px) {
+    .card {
+        margin: 10px 20px;
+    }
+    
+    .options {
+        font-size: 0.8em;
+    }
+
+    .read-more a {
+        padding: 6px 8px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .cards {
-        display: block;
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 20px 0;
     }
 }
