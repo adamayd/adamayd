@@ -451,7 +451,7 @@ footer {
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   position: relative;
-  margin: 0 5%; }
+  margin: 20px 5%; }
   .card:hover {
     box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2); }
   .card h1 {
@@ -500,3 +500,7 @@ footer {
 
 .fa {
   margin-right: .25rem; }
+
+@media screen and (max-width: 768px) {
+  .cards {
+    display: block; } }
