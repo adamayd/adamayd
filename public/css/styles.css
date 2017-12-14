@@ -514,3 +514,20 @@ footer {
     flex-direction: column; }
   .card {
     margin: 20px 0; } }
+
+.port-container {
+  display: flex;
+  justify-content: space-around; }
+
+.port-slide {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  background-image: url(https://picsum.photos/300/300); }
+  .port-slide:hover {
+    color: #e76c67;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url(https://picsum.photos/300/300); }
