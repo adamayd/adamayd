@@ -1,6 +1,11 @@
-.card {
+.blog-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.blog {
     flex-basis: 50%;
-    border: 1px solid #efefef;
     box-shadow: 2px 6px 25px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     position: relative;
@@ -9,34 +14,35 @@
     &:hover {
         box-shadow: 2px 6px 30px rgba(0,0,0,0.2);
     }
-    h1 {
-        margin: 0;
-    }
     p {
         margin: 0 0 30px;
     }
 }
 
-.card-content {
+.blog-content {
     padding: 30px 30px 110px;
-    color: $card-text;
+    color: $black;
 }
 
-.subtitle {
+.blog-title {
+    margin: 0;
+}
+
+.blog-subtitle {
     margin: 0 0 15px;
     font-weight: 700;
     font-size: 1.25rem;
     color: $subdued-red;
 }
 
-.card-details {
+.blog-details {
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
 }
 
-.card-details-inner {
+.blog-details-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,32 +51,27 @@
     padding: 30px 0;
 }
 
-.card-image {
+.blog-image {
     height: 200px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;    
-}
-
-.options a {
-    color: $card-text;
+.blog-link {
+    color: $black;
+    display: block;
     &:hover {
-        color: #222222;
+        color: $notsoblack;
     }
 }
 
-.fa {
+.blog-fa {
     margin-right: .25rem;
 }
 
 @media screen and (max-width: 900px) {
-    .card {
+    .blog {
         margin: 10px 20px;
     }
     
@@ -84,11 +85,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .cards {
+    .blog-container {
         flex-direction: column;
     }
 
-    .card {
+    .blog {
         margin: 20px 0;
     }
 }

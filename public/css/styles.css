@@ -377,8 +377,9 @@ a {
 
 html {
   box-sizing: border-box;
-  background: #000000;
+  background: #222222;
   line-height: 1.6;
+  color: #222222;
   font-family: 'Nunito', sans-serif; }
 
 *, *:before, *:after {
@@ -399,7 +400,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  transition: all 0.2s cubic-bezier(0.44, 0.05, 1, 1);
+  transition: all 0.2s ease-in-out;
   z-index: 2;
   padding-right: 100px; }
 
@@ -417,8 +418,8 @@ h1, h2, h3, h4, h5 {
   color: #ffffff;
   padding: 20px; }
 
-.dark-nav {
-  background: #000000; }
+.nav--dark {
+  background: #222222; }
 
 @media screen and (max-width: 768px) {
   .nav-bar {
@@ -430,7 +431,7 @@ h1, h2, h3, h4, h5 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 33vh;
+  height: 50vh;
   background-attachment: fixed;
   color: #ffffff;
   display: flex; }
@@ -449,90 +450,13 @@ h1, h2, h3, h4, h5 {
 section {
   margin: 0; }
   section:nth-of-type(odd) {
-    background-color: lightgray; }
+    background-color: #ebe9e9; }
 
 .container {
   margin: auto;
   padding: 50px 0;
   width: 80%;
   text-align: center; }
-
-footer {
-  background: #000000;
-  color: #ffffff;
-  margin: 0; }
-
-.card {
-  flex-basis: 50%;
-  border: 1px solid #efefef;
-  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-  max-width: 400px;
-  margin: 30px; }
-  .card:hover {
-    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2); }
-  .card h1 {
-    margin: 0; }
-  .card p {
-    margin: 0 0 30px; }
-
-.card-content {
-  padding: 30px 30px 110px;
-  color: #666666; }
-
-.subtitle {
-  margin: 0 0 15px;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: #e76c67; }
-
-.card-details {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0; }
-
-.card-details-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #efefef;
-  margin: 0 30px;
-  padding: 30px 0; }
-
-.card-image {
-  height: 200px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
-
-.cards {
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
-
-.options a {
-  color: #666666; }
-  .options a:hover {
-    color: #222222; }
-
-.fa {
-  margin-right: .25rem; }
-
-@media screen and (max-width: 900px) {
-  .card {
-    margin: 10px 20px; }
-  .options {
-    font-size: 0.8em; }
-  .read-more a {
-    padding: 6px 8px; } }
-
-@media screen and (max-width: 768px) {
-  .cards {
-    flex-direction: column; }
-  .card {
-    margin: 20px 0; } }
 
 .port-container {
   display: flex;
@@ -580,3 +504,81 @@ footer {
 @media screen and (max-width: 768px) {
   .port-container {
     flex-direction: column; } }
+
+.blog-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.blog {
+  flex-basis: 50%;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  max-width: 400px;
+  margin: 30px; }
+  .blog:hover {
+    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2); }
+  .blog p {
+    margin: 0 0 30px; }
+
+.blog-content {
+  padding: 30px 30px 110px;
+  color: #222222; }
+
+.blog-title {
+  margin: 0; }
+
+.blog-subtitle {
+  margin: 0 0 15px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #e76c67; }
+
+.blog-details {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0; }
+
+.blog-details-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #efefef;
+  margin: 0 30px;
+  padding: 30px 0; }
+
+.blog-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.blog-link {
+  color: #222222;
+  display: block; }
+  .blog-link:hover {
+    color: #676767; }
+
+.blog-fa {
+  margin-right: .25rem; }
+
+@media screen and (max-width: 900px) {
+  .blog {
+    margin: 10px 20px; }
+  .options {
+    font-size: 0.8em; }
+  .read-more a {
+    padding: 6px 8px; } }
+
+@media screen and (max-width: 768px) {
+  .blog-container {
+    flex-direction: column; }
+  .blog {
+    margin: 20px 0; } }
+
+footer {
+  background: #222222;
+  color: #ffffff;
+  margin: 0; }
