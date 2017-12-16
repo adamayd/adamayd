@@ -377,7 +377,7 @@ a {
 
 html {
   box-sizing: border-box;
-  background: #444444;
+  background: #000000;
   line-height: 1.6;
   font-family: 'Nunito', sans-serif; }
 
@@ -391,7 +391,7 @@ body {
 h1, h2, h3, h4, h5 {
   line-height: 1.2; }
 
-nav {
+.nav-bar {
   position: fixed;
   width: 100%;
   background: transparent;
@@ -400,22 +400,31 @@ nav {
   justify-content: flex-end;
   align-items: center;
   transition: all 0.2s cubic-bezier(0.44, 0.05, 1, 1);
-  z-index: 2; }
-  nav ul {
-    list-style: none;
-    margin: 0; }
-  nav li {
-    display: inline;
-    text-align: center; }
-  nav a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 20px; }
+  z-index: 2;
+  padding-right: 100px; }
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  display: inline; }
+
+.nav-item {
+  display: inline;
+  text-align: center; }
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px; }
 
 .dark-nav {
   background: #000000; }
 
-header {
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    padding-right: 50px; } }
+
+.header {
   padding-top: 50px;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/25u6xk0.jpg");
   background-repeat: no-repeat;
@@ -427,23 +436,31 @@ header {
   display: flex; }
 
 .title {
-  justify-content: left;
   align-self: flex-end;
   padding: 30px; }
+
+@media screen and (max-width: 450px) {
+  .header {
+    justify-content: center; }
+  .title {
+    align-self: stretch;
+    text-align: center; } }
 
 section {
   margin: 0; }
   section:nth-of-type(odd) {
-    background: lightgray; }
-  section .container {
-    margin: auto;
-    padding: 50px 0;
-    width: 80%;
-    text-align: center; }
+    background-color: lightgray; }
+
+.container {
+  margin: auto;
+  padding: 50px 0;
+  width: 80%;
+  text-align: center; }
 
 footer {
   background: #000000;
-  color: #ffffff; }
+  color: #ffffff;
+  margin: 0; }
 
 .card {
   flex-basis: 50%;
@@ -492,6 +509,7 @@ footer {
 
 .cards {
   display: flex;
+  align-items: center;
   justify-content: space-around; }
 
 .options a {
@@ -518,6 +536,7 @@ footer {
 
 .port-container {
   display: flex;
+  align-items: center;
   justify-content: space-around; }
 
 .port-slide {
@@ -547,7 +566,7 @@ footer {
   color: transparent; }
 
 .port-slide-active {
-  color: white; }
+  color: #ffffff; }
 
 .port-title-active {
   transform: translateY(0%); }
@@ -556,4 +575,8 @@ footer {
   transform: translateY(0%);
   border: 1px solid #e76c67;
   background: rgba(231, 108, 103, 0.3);
-  color: white; }
+  color: #ffffff; }
+
+@media screen and (max-width: 768px) {
+  .port-container {
+    flex-direction: column; } }

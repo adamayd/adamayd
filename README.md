@@ -23,7 +23,7 @@ After everything is installed used ```npm start``` to start the server.
 ## Technologies Used
 
 * HTML
-* Jekyll
+* Jekyll or Gatsby ???
 * CSS
 * Sass
 * Javascript ES2015/ES6
@@ -31,6 +31,11 @@ After everything is installed used ```npm start``` to start the server.
 * Gulp.js
 * Node.js/NPM
 * BrowserSync
+
+## APIs Used
+
+* Instagram API [Link to Docs](https://www.instagram.com/developer/)
+* Medium API [Link to Docs](https://github.com/Medium/medium-api-docs)
 
 ## Licence 
 
