@@ -364,16 +364,16 @@ a {
 .button {
   display: block;
   font-size: 1rem;
-  background: #e76c67;
   border: 1px solid #e76c67;
   padding: .75rem 1rem;
-  color: #ffffff;
+  color: #e76c67;
   text-decoration: none;
   font-weight: 700;
   text-align: center; }
   .button:hover, .button:focus {
     background: #e0413b;
-    border: 1px solid #e0413b; }
+    border: 1px solid #e0413b;
+    color: white; }
 
 html {
   box-sizing: border-box;
@@ -451,6 +451,7 @@ footer {
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   position: relative;
+  max-width: 400px;
   margin: 30px; }
   .card:hover {
     box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2); }
@@ -522,12 +523,37 @@ footer {
 .port-slide {
   height: 300px;
   width: 300px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  flex-direction: column;
+  transition: opacity 0.5s;
+  color: transparent;
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
   background-image: url(https://picsum.photos/300/300); }
   .port-slide:hover {
-    color: #e76c67;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url(https://picsum.photos/300/300); }
+    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)), url(https://picsum.photos/300/300); }
+
+.port-title {
+  transition: all 0.5s;
+  transform: translateY(50%); }
+
+.port-button {
+  transition: all 0.5s;
+  transform: translateY(-50%);
+  border: none;
+  color: transparent; }
+
+.port-slide-active {
+  color: white; }
+
+.port-title-active {
+  transform: translateY(0%); }
+
+.port-button-active {
+  transform: translateY(0%);
+  border: 1px solid #e76c67;
+  background: rgba(231, 108, 103, 0.3);
+  color: white; }
