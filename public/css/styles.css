@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -358,7 +358,7 @@ th {
   padding: 0; }
 
 a {
-  color: #e76c67;
+  color: #ffffff;
   text-decoration: none; }
 
 .button {
@@ -380,7 +380,8 @@ html {
   background: #222222;
   line-height: 1.6;
   color: #222222;
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -396,6 +397,7 @@ h1, h2, h3, h4, h5 {
   position: fixed;
   width: 100%;
   background: transparent;
+  color: #ffffff;
   height: 50px;
   display: flex;
   justify-content: flex-end;
@@ -403,6 +405,8 @@ h1, h2, h3, h4, h5 {
   transition: all 0.2s ease-in-out;
   z-index: 2;
   padding-right: 100px; }
+  .nav-bar:hover {
+    color: #676767; }
 
 .nav-list {
   list-style: none;
@@ -415,8 +419,13 @@ h1, h2, h3, h4, h5 {
 
 .nav-link {
   text-decoration: none;
-  color: #ffffff;
+  transition: all 0.2s ease-in-out;
   padding: 20px; }
+  .nav-link:hover {
+    color: #ffffff; }
+
+.nav-link-dark {
+  color: #676767; }
 
 .nav--dark {
   background: #222222; }

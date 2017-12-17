@@ -2,6 +2,7 @@
     position: fixed;
     width: 100%;
     background: $clear;
+    color: $white;
     height: 50px;
     display: flex;
     justify-content: flex-end;
@@ -9,6 +10,9 @@
     transition: all 0.2s ease-in-out;
     z-index: 2;
     padding-right: 100px;
+    &:hover {
+        color: $notsoblack;
+    }
 }
 
 .nav-list {
@@ -22,8 +26,15 @@
 }
 .nav-link {
     text-decoration: none;
-    color: $white;
+    transition: all 0.2s ease-in-out;
     padding: 20px;
+    &:hover {
+        color: $white;
+    }
+}
+
+.nav-link-dark {
+    color: $notsoblack;
 }
 
 .nav--dark {
