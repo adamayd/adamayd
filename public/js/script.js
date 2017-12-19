@@ -14,6 +14,14 @@ function navBG() {
     }
 }
 
+function smoothNav() {
+    // console.log('you clicked the nav link')
+    navBar.classList.add('nav-bar-smooth')
+    setTimeout(() => {
+        navBar.classList.remove('nav-bar-smooth')
+    }, 20)
+}
+
 function highlightNavLink() {
     navLinks.forEach(navLink => navLink.classList.toggle('nav-link-dark'))
 }
@@ -42,5 +50,5 @@ portSlides.forEach(portSlide => portSlide.addEventListener('mouseenter', portTit
 portSlides.forEach(portSlide => portSlide.addEventListener('mouseleave', portTitleAppear))
 navList.addEventListener('mouseenter', highlightNavLink)
 navList.addEventListener('mouseleave', highlightNavLink)
-
+navLinks.forEach(navLink => navLink.addEventListener('click', smoothNav))
 addLifeGrid()

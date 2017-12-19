@@ -408,6 +408,9 @@ h1, h2, h3, h4, h5 {
   .nav-bar:hover {
     color: #676767; }
 
+.nav-bar-smooth {
+  transition: 0s; }
+
 .nav-list {
   list-style: none;
   margin: 0;
@@ -451,7 +454,12 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (max-width: 450px) {
   .header {
-    justify-content: center; }
+    justify-content: center;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/25u6xk0.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 33vh; }
   .title {
     align-self: stretch;
     text-align: center; } }
@@ -597,6 +605,7 @@ section {
   height: 90%;
   color: #ffffff;
   flex: 1;
+  flex-basis: auto;
   justify-content: center;
   border: 1px solid #222222; }
 
