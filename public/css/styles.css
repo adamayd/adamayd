@@ -587,6 +587,19 @@ section {
   .blog {
     margin: 20px 0; } }
 
+.life-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.life-box {
+  height: 90%;
+  color: #ffffff;
+  flex: 1;
+  justify-content: center;
+  border: 1px solid #222222; }
+
 footer {
   background: #222222;
   color: #ffffff;

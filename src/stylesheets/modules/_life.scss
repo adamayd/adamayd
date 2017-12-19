@@ -1,0 +1,15 @@
+.life-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.life-box {
+    height: 90%;
+    // width: 50px;
+    color: $white;
+    flex: 1;
+    justify-content: center;
+    border: 1px solid $black;
+}

@@ -2,6 +2,7 @@ const navBar = document.querySelector('nav')
 const portSlides = document.querySelectorAll('.port-slide')
 const navList = document.querySelector('.nav-list')
 const navLinks = document.querySelectorAll('.nav-link')
+const lifeGrid = document.querySelector('.life-grid')
 
 function navBG() {
     // console.log(document.scrollTop);
@@ -26,7 +27,12 @@ function portTitleAppear() {
 }
 
 function addLifeGrid() {
-    const gridSize = window.innerWidth > 900 ? 10 : window.innerWidth > 768 ? 6 : 3
+    const gridSize = window.innerWidth > 900 ? 9 : window.innerWidth > 768 ? 6 : 3
+    let addToGrid = ''
+    for (let i = 0; i < gridSize; i++) {
+        addToGrid = addToGrid + '<div class="life-box" style="background-image: url(https://picsum.photos/100/100/?random)">Grid Box ' + (i + 1) + '</div>'
+    }
+    lifeGrid.innerHTML = addToGrid
 }
 
 
@@ -36,3 +42,5 @@ portSlides.forEach(portSlide => portSlide.addEventListener('mouseenter', portTit
 portSlides.forEach(portSlide => portSlide.addEventListener('mouseleave', portTitleAppear))
 navList.addEventListener('mouseenter', highlightNavLink)
 navList.addEventListener('mouseleave', highlightNavLink)
+
+addLifeGrid()
