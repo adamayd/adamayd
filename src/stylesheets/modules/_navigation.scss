@@ -19,6 +19,17 @@
     transition: 0s;
 }
 
+.nav-button {
+    display: none;
+}
+
+.nav-button-line {
+    width: 30px;
+    height: 4px;
+    background-color: $white;
+    margin: 6px;
+}
+
 .nav-list {
     list-style: none;
     margin: 0;
@@ -47,6 +58,14 @@
 
 @media screen and (max-width: 768px) {
     .nav-bar {
-        padding-right: 50px;
+        padding-right: 0px;
+    }
+
+    .nav-button {
+        display: block;
+    }
+    
+    .nav-item {
+        display: none;
     }
 }

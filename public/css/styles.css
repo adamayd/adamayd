@@ -411,6 +411,15 @@ h1, h2, h3, h4, h5 {
 .nav-bar-smooth {
   transition: 0s; }
 
+.nav-button {
+  display: none; }
+
+.nav-button-line {
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 6px; }
+
 .nav-list {
   list-style: none;
   margin: 0;
@@ -435,7 +444,11 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (max-width: 768px) {
   .nav-bar {
-    padding-right: 50px; } }
+    padding-right: 0px; }
+  .nav-button {
+    display: block; }
+  .nav-item {
+    display: none; } }
 
 .header {
   padding-top: 50px;
@@ -546,10 +559,10 @@ section {
 .blog-title {
   margin: 0; }
 
-.blog-subtitle {
+.blog-date {
   margin: 0 0 15px;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 0.9 rem;
   color: #e76c67; }
 
 .blog-details {
@@ -584,10 +597,8 @@ section {
 @media screen and (max-width: 900px) {
   .blog {
     margin: 10px 20px; }
-  .options {
-    font-size: 0.8em; }
-  .read-more a {
-    padding: 6px 8px; } }
+  .blog-link-name {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   .blog-container {

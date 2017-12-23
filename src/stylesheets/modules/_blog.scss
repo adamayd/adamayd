@@ -28,10 +28,10 @@
     margin: 0;
 }
 
-.blog-subtitle {
+.blog-date {
     margin: 0 0 15px;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 0.9 rem;
     color: $subdued-red;
 }
 
@@ -66,6 +66,8 @@
     }
 }
 
+
+
 .blog-fa {
     margin-right: .25rem;
 }
@@ -74,13 +76,9 @@
     .blog {
         margin: 10px 20px;
     }
-    
-    .options {
-        font-size: 0.8em;
-    }
 
-    .read-more a {
-        padding: 6px 8px;
+    .blog-link-name {
+        display: none;
     }
 }
 
