@@ -403,7 +403,6 @@ h1, h2, h3, h4, h5 {
   justify-content: flex-end;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  z-index: 2;
   padding-right: 100px; }
   .nav-bar:hover {
     color: #676767; }
@@ -533,7 +532,17 @@ section {
 
 @media screen and (max-width: 768px) {
   .port-container {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .port-slide {
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)), url(https://picsum.photos/300/300);
+    color: #ffffff; }
+  .port-title {
+    transform: translateY(0%); }
+  .port-button {
+    transform: translateY(0%);
+    border: 1px solid #e76c67;
+    background: rgba(231, 108, 103, 0.3);
+    color: #ffffff; } }
 
 .blog-container {
   display: flex;
