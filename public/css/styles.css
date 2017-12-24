@@ -398,60 +398,43 @@ h1, h2, h3, h4, h5 {
   top: 0;
   left: 0;
   width: 100%;
-  background: transparent;
-  color: #ffffff;
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  padding-right: 100px; }
-  .nav-bar:hover {
-    color: #676767; }
-
-.nav-bar-smooth {
-  transition: 0s; }
-
-.nav-button {
-  display: none; }
-
-.nav-button-line {
-  width: 30px;
-  height: 4px;
-  background-color: #ffffff;
-  margin: 6px; }
+  margin: 0;
+  background: transparent; }
 
 .nav-list {
-  list-style: none;
   margin: 0;
-  display: inline; }
-
-.nav-item {
-  display: inline;
-  text-align: center; }
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; }
 
 .nav-link {
-  display: inline;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  padding: 20px; }
+  display: block;
+  padding: 1em; }
   .nav-link:hover {
     color: #ffffff; }
 
-.nav-link-dark {
+.js-nav-dark {
+  transition: all 0.2s;
+  background-color: #222222; }
+
+.js-nav-smooth {
+  transition: all 0.0s; }
+
+.js-nav-link-dark {
   color: #676767; }
 
-.nav--dark {
-  background: #222222; }
+@media screen and (max-width: 800px) {
+  .nav-list {
+    justify-content: space-around; } }
 
-@media screen and (max-width: 767px) {
-  .nav-bar {
-    padding-right: 30px;
-    height: 200px; }
-  .nav-button {
-    display: block; }
+@media screen and (max-width: 600px) {
+  .nav-list {
+    flex-flow: column wrap;
+    padding: 0;
+    background: #222222; }
   .nav-link {
-    display: block; } }
+    text-align: center;
+    padding: 10px; } }
 
 .header {
   padding-top: 50px;
@@ -468,7 +451,7 @@ h1, h2, h3, h4, h5 {
   align-self: flex-end;
   padding: 30px; }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
   .header {
     justify-content: center;
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/25u6xk0.jpg");
@@ -613,7 +596,7 @@ section {
   .blog-link-name {
     display: none; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .blog-container {
     flex-direction: column; }
   .blog {

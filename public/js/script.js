@@ -1,29 +1,29 @@
 const navBar = document.querySelector('nav')
 const portSlides = document.querySelectorAll('.port-slide')
-// const navList = document.querySelector('.nav-list')
+const navList = document.querySelector('.nav-list')
 const navLinks = document.querySelectorAll('.nav-link')
 const lifeGrid = document.querySelector('.life-grid')
 
 function navBG() {
     // console.log(document.scrollTop);
-    const winHeight = (window.innerHeight / 2) - (window.innerHeight / 7)
+    const winHeight = window.innerWidth > 800 ? (window.innerHeight / 2) - (window.innerHeight / 7) : 10
     if (window.scrollY > winHeight) {
-        navBar.classList.add('nav--dark')
+        navBar.classList.add('js-nav-dark')
     } else {
-        navBar.classList.remove('nav--dark')
+        navBar.classList.remove('js-nav-dark')
     }
 }
 
 function smoothNav() {
     // console.log('you clicked the nav link')
-    navBar.classList.add('nav-bar-smooth')
+    navBar.classList.add('js-nav-smooth')
     setTimeout(() => {
-        navBar.classList.remove('nav-bar-smooth')
+        navBar.classList.remove('js-nav-smooth')
     }, 20)
 }
 
 function highlightNavLink() {
-    navLinks.forEach(navLink => navLink.classList.toggle('nav-link-dark'))
+    navLinks.forEach(navLink => navLink.classList.toggle('js-nav-link-dark'))
 }
 
 function hamburgerBtn() {
@@ -52,7 +52,7 @@ window.addEventListener('scroll', navBG);
 window.addEventListener('resize', addLifeGrid)
 portSlides.forEach(portSlide => portSlide.addEventListener('mouseenter', portTitleAppear))
 portSlides.forEach(portSlide => portSlide.addEventListener('mouseleave', portTitleAppear))
-// navList.addEventListener('mouseenter', highlightNavLink)
-// navList.addEventListener('mouseleave', highlightNavLink)
+navList.addEventListener('mouseenter', highlightNavLink)
+navList.addEventListener('mouseleave', highlightNavLink)
 navLinks.forEach(navLink => navLink.addEventListener('click', smoothNav))
 addLifeGrid()

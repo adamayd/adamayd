@@ -11,7 +11,7 @@
   padding: 30px;
 }
 
-@media screen and (max-width: 450px) {  
+@media screen and (max-width: 800px) {  
   .header {
     justify-content: center;
     @include bgImage("../images/25u6xk0.jpg", 33vh);
