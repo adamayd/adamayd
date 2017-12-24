@@ -41,6 +41,8 @@
     text-align: center;
 }
 .nav-link {
+    display: inline;
+    // float: left;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     padding: 20px;
@@ -57,16 +59,17 @@
     background: $black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .nav-bar {
-        padding-right: 0px;
+        padding-right: 30px;
+        height: 200px;
     }
 
     .nav-button {
         display: block;
     }
     
-    .nav-item {
-        display: none;
+    .nav-link {
+        display: block;
     }
 }

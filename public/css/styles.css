@@ -431,6 +431,7 @@ h1, h2, h3, h4, h5 {
   text-align: center; }
 
 .nav-link {
+  display: inline;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   padding: 20px; }
@@ -443,13 +444,14 @@ h1, h2, h3, h4, h5 {
 .nav--dark {
   background: #222222; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-bar {
-    padding-right: 0px; }
+    padding-right: 30px;
+    height: 200px; }
   .nav-button {
     display: block; }
-  .nav-item {
-    display: none; } }
+  .nav-link {
+    display: block; } }
 
 .header {
   padding-top: 50px;

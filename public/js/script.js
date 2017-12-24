@@ -1,6 +1,6 @@
 const navBar = document.querySelector('nav')
 const portSlides = document.querySelectorAll('.port-slide')
-const navList = document.querySelector('.nav-list')
+// const navList = document.querySelector('.nav-list')
 const navLinks = document.querySelectorAll('.nav-link')
 const lifeGrid = document.querySelector('.life-grid')
 
@@ -26,6 +26,10 @@ function highlightNavLink() {
     navLinks.forEach(navLink => navLink.classList.toggle('nav-link-dark'))
 }
 
+function hamburgerBtn() {
+    console.log('Hamburger Clicked')
+}
+
 function portTitleAppear() {
     const portTitle = this.querySelector('.port-title')
     const portButton = this.querySelector('.port-button')
@@ -48,7 +52,7 @@ window.addEventListener('scroll', navBG);
 window.addEventListener('resize', addLifeGrid)
 portSlides.forEach(portSlide => portSlide.addEventListener('mouseenter', portTitleAppear))
 portSlides.forEach(portSlide => portSlide.addEventListener('mouseleave', portTitleAppear))
-navList.addEventListener('mouseenter', highlightNavLink)
-navList.addEventListener('mouseleave', highlightNavLink)
+// navList.addEventListener('mouseenter', highlightNavLink)
+// navList.addEventListener('mouseleave', highlightNavLink)
 navLinks.forEach(navLink => navLink.addEventListener('click', smoothNav))
 addLifeGrid()
